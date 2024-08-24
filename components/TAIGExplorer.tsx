@@ -51,7 +51,9 @@ const TAIGExplorer: React.FC<TAIGExplorerProps> = ({ data }) => {
     return (
       <div className="w-full p-2">
         {Object.entries(columnData).map(([key, value]) => {
-          const title = typeof value === 'object' && !Array.isArray(value) ? Object.keys(value)[0] : key;
+          const title = typeof value === 'object' && value !== null && !Array.isArray(value) 
+            ? Object.keys(value)[0] || key 
+            : key;
           const currentPath = [...selectedPath.slice(0, depth), key];
 
           const colorClass = depth === 0 ? getColorClass(title, depth) : getColorClass(selectedDomain, depth);
