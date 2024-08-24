@@ -1,0 +1,353 @@
+{
+    "sections": {
+        "1": {
+            "Assessment": {
+                "1.1": {
+                    "Data": {
+                        "1.1.1": {
+                            "Identification of Problematic Data": [
+                                "How can methods for identifying problematic data be scaled to large (on the magnitude of trillions of tokens/samples) datasets?",
+                                "How can licence collection be automated to prevent training on unlicensed data?",
+                                "How can the accuracy of licences be ensured when aggregating datasets from multiple sources?",
+                                "How can problematic data be identified without full/direct access to the dataset?",
+                                "How can contamination of training data with problematic samples be reliably detected?",
+                                "How can harmful data be removed from a dataset without facilitating its easy identification by malicious actors?"
+                            ]
+                        },
+                        "1.1.2": {
+                            "Infrastructure and Metadata to Analyse Large Datasets": [
+                                "What licence and meta-data reporting requirements could assist in responsible data practices?",
+                                "What infrastructure is needed to enable researchers to audit large datasets?",
+                                "How can macro-scale dataset properties, such as persistent bias, be identified and measured?",
+                                "What information about datasets is necessary for determining their suitability for training?"
+                            ]
+                        },
+                        "1.1.3": {
+                            "Attribution of Model Behaviour to Data": [
+                                "What is the effect of problematic data on downstream system performance?",
+                                "Can system behaviours and/or properties be accurately attributed to pretraining and/or fine-tuning data samples?"
+                            ]
+                        }
+                    }
+                },
+                "1.2": {
+                    "Compute": {
+                        "1.2.1": {
+                            "Definition of Chip and Cluster Specifications for Model Training": [
+                                "What hardware properties or chip specifications are most indicative of suitability for AI training and/or inference? How does this differ from other scientific, business, or casual uses of high-end hardware?",
+                                "How efficiently can AI models be trained using a large number of small compute clusters?",
+                                "How can decentralised training attempts be identified?"
+                            ]
+                        },
+                        "1.2.2": {
+                            "Classification of Workloads": [
+                                "Can large training runs be detected while retaining developer privacy, for example through identifying signatures in processor utilisation?",
+                                "Can compute workloads be reliably classified as either training, inference, or non-AI-related, for example through identifying signatures in processor utilisation?"
+                            ]
+                        }
+                    }
+                },
+                "1.3": {
+                    "Models and Algorithms": {
+                        "1.3.1": {
+                            "Reliable Evaluations": [
+                                "How can the thoroughness of evaluations be measured?",
+                                "How can potential blind spots of evaluations be identified?",
+                                "How can potential data contamination be accounted for when conducting evaluations?",
+                                "How can mechanistic analysis of model internals, such as weights, activations and loss landscapes on particular data, be used to improve understanding of a model's capabilities, limitations and weaknesses?",
+                                "How generalisable are mechanistic analyses across models?"
+                            ]
+                        },
+                        "1.3.2": {
+                            "Efficient Evaluations": [
+                                "How can methods for red-teaming models be scaled and/or automated?"
+                            ]
+                        },
+                        "1.3.3": {
+                            "(Multi-)Agent Evaluations": [
+                                "How can the capabilities and risks of AI agents be evaluated?",
+                                "How can the capabilities and risks of networks of multiple interacting AI agents be evaluated?"
+                            ]
+                        }
+                    }
+                },
+                "1.4": {
+                    "Deployment": {
+                        "1.4.1": {
+                            "Downstream Impact Evaluations": [
+                                "How can the downstream societal impacts of AI systems be predicted and/or determined?",
+                                "How can downstream impact evaluations be scaled across languages and modalities?",
+                                "How can benchmarks be designed in a way that ensures construct validity and/or ecological validity?",
+                                "How can dynamic simulation environments be designed to better reflect real-world environments?"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "2": {
+            "Access": {
+                "2.1": {
+                    "Data": {
+                        "2.1.1": {
+                            "Privacy-Preserving Third-Party Access to Datasets": [
+                                "How can data access be structured so as to preserve privacy while enabling meaningful auditing?",
+                                "How can data access be reconciled with privacy-preserving machine learning?"
+                            ]
+                        },
+                        "2.1.2": {
+                            "Preservation of Evaluation Data Integrity": [
+                                "How can openly hosted datasets be prevented from contaminating training data?",
+                                "How can independent evaluation on standardised datasets be facilitated without openly hosting evaluation datasets?"
+                            ]
+                        }
+                    }
+                },
+                "2.2": {
+                    "Compute": {
+                        "2.2.1": {
+                            "Addressing Compute Inequities": [
+                                "How can public compute resources be allocated fairly and equitably between users?",
+                                "How can public compute infrastructure be developed in a way that ensures interoperability between models and software packages?",
+                                "How can assurance be given that researcher compute provisions are being used for intended and stated purposes?"
+                            ]
+                        }
+                    }
+                },
+                "2.3": {
+                    "Models and Algorithms": {
+                        "2.3.1": {
+                            "Facilitation of Third-Party Access to Models": [
+                                "What research and auditing methodologies are possible given a range of forms of access on the continuum between black- and white-box access?",
+                                "How do different forms of access affect potential risks of misuse of models?",
+                                "How do different forms of access on the continuum between black- and white-box access affect the risk of model theft or duplication?",
+                                "How can model access requirements for research and auditing be reconciled with commercial and/or safety concerns?"
+                            ]
+                        }
+                    }
+                },
+                "2.4": {
+                    "Deployment": {
+                        "2.4.1": {
+                            "Access to Downstream User Logs and Data": [
+                                "How can user logs and data be used for downstream impact assessments while preserving the privacy of data subjects?",
+                                "How could responsibilities for providing user data access be effectively allocated along the AI value chain?",
+                                "What cryptographic methods can be developed to allow analysis of user interaction data without revealing individual user identities or sensitive information?",
+                                "How could secure multi-party computation be leveraged to allow collaborative analysis of user logs across different entities in the AI value chain?"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "3": {
+            "Verification": {
+                "3.1": {
+                    "Data": {
+                        "3.1.1": {
+                            "Verification of Training Data": [
+                                "How can it be verified that a model was (not) trained on a given dataset?",
+                                "How can it be verified that a dataset has certain properties, or (does not) include certain information?",
+                                "How can membership inference attacks be optimised for large-scale verification of training data in black-box settings?",
+                                "How could the verification process for correct use of licensed data in AI model training be formalised?"
+                            ]
+                        }
+                    }
+                },
+                "3.2": {
+                    "Compute": {
+                        "3.2.1": {
+                            "Verification of Chip Location": [
+                                "How can the location of AI hardware be verified?",
+                                "How can on-chip geolocation mechanisms be made robust to existing GPS spoofing methods?"
+                            ]
+                        },
+                        "3.2.2": {
+                            "Verification of Compute Workloads": [
+                                "Can TEEs be used to robustly attest to the identity of the specific chip, or the data that it is processing?",
+                                "What methods can be used to verify compute usage without the use of TEEs?",
+                                "How can TEEs and their applications be designed in a way that limits their potential for misuse, for example through unnecessarily-broad surveillance?",
+                                "How can the computational overhead of verification mechanisms be reduced to a level that enables application across large compute clusters?"
+                            ]
+                        }
+                    }
+                },
+                "3.3": {
+                    "Models and Algorithms": {
+                        "3.3.1": {
+                            "Verification of Model Properties": [
+                                "How can model properties be verified with full access to the model?",
+                                "How can the risk associated with a given context, query, and AI response be assessed in order to obtain assurances about the system's compliance with safety requirements?"
+                            ]
+                        },
+                        "3.3.2": {
+                            "Verification of Dynamic Systems": [
+                                "What should constitute the lower bar for tracking updates to models, for example in a model registry?"
+                            ]
+                        },
+                        "3.3.3": {
+                            "Proof-of-Learning": [
+                                "Could proof-of-learning be used to demonstrate and verify model ownership?",
+                                "How can proof-of-learning mechanisms be made robust to adversarial spoofing?"
+                            ]
+                        }
+                    }
+                },
+                "3.4": {
+                    "Deployment": {
+                        "3.4.1": {
+                            "Verifiable Audits": [
+                                "How can audit registries be used to provide end-to-end verification along the AI value chain?",
+                                "How should verification information from model registries be presented to users?",
+                                "Can zero-knowledge proofs be applied to demonstrate a model's compliance with hypothetical mandated criteria, without directly disclosing architectural details?",
+                                "How can it be verified that the model version on which an evaluation or audit was performed is the same as is deployed?",
+                                "How can the implementation of safety measures be verified at deployment?"
+                            ]
+                        },
+                        "3.4.2": {
+                            "Verification of AI-generated Content": [
+                                "How can output watermarking schemes be made robust to adversarial attempts at removal?",
+                                "How can metadata watermarking be applied to AI-generated content?",
+                                "How robust can AI content detectors be expected to be in light of continuing advances in generative AI?",
+                                "How should AI-generated content detectors handle cases of genuine images that have been modified or edited with AI tools?"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "4": {
+            "Security": {
+                "4.1": {
+                    "Data": {
+                        "4.1.1": {
+                            "Detection and Prevention of Training Data Extraction": [
+                                "How can attempted data extraction attacks be reliably identified?",
+                                "How can AI systems be made robust to data extraction attacks?",
+                                "How can methods for restricting verbatim reproduction of training data be generalised to protect the same information being extracted in a slightly different form?"
+                            ]
+                        }
+                    }
+                },
+                "4.2": {
+                    "Compute": {
+                        "4.2.1": {
+                            "Use of Hardware Mechanisms for AI Security": [
+                                "How can hardware-enabled governance methods be implemented at scale to ensure the security of a compute cluster?",
+                                "How can it be ensured that given code, along with model weights, can only be executed with a licence that is verified on-chip, so that distributed AI executables can only be run on approved chips?",
+                                "How can on-chip governance firmware be modified or updated while the chip is in operation while remaining resistant to potential attacks?",
+                                "How secure are existing implementations of TEEs on AI accelerators?"
+                            ]
+                        },
+                        "4.2.2": {
+                            "Anti-Tamper Hardware": [
+                                "How can methods for tamper-evidence or responsiveness be reconciled with the performance demands of high-end AI accelerators?",
+                                "How secure are existing approaches to tamper-evidence and responsiveness?",
+                                "How can tamper-proofing methods incorporate self-destruct mechanisms in case of attempted tampering?"
+                            ]
+                        },
+                        "4.2.3": {
+                            "Enforcement of Compute Usage Restrictions": [
+                                "How could the use of high-end chips in training foundation models be prevented?",
+                                "Can enforceable mechanisms be developed to allow for the export of chips under predefined conditions?"
+                            ]
+                        }
+                    }
+                },
+                "4.3": {
+                    "Models and Algorithms": {
+                        "4.3.1": {
+                            "Prevention of Model Theft": [
+                                "What cybersecurity measures can be taken at the infrastructure level to protect model weights from theft by an adversary?",
+                                "How can models be protected from inference attacks aiming to reproduce or replicate model weights and architecture?"
+                            ]
+                        },
+                        "4.3.2": {
+                            "Shared Model Governance": [
+                                "What are the most promising methods for enabling shared model governance?"
+                            ]
+                        },
+                        "4.3.3": {
+                            "Model Disgorgement and Machine Unlearning": [
+                                "How should the success of different model unlearning techniques be evaluated?",
+                                "How can it be ensured that machine unlearning and model editing techniques do not cause unwanted side-effects such as removing concepts that were not explicitly targeted?",
+                                "How effective are model unlearning and model editing techniques when applied to multi-lingual or multi-modal models?"
+                            ]
+                        }
+                    }
+                },
+                "4.4": {
+                    "Deployment": {
+                        "4.4.1": {
+                            "Detection of Adversarial Attacks": [
+                                "How can the robustness of methods for detecting adversarial attacks be improved?",
+                                "What interventions are most effective for handling detected adversarial attacks at inference time?"
+                            ]
+                        },
+                        "4.4.2": {
+                            "Modification-Resistant Models": [
+                                "How can a model be made resistant to being fine-tuned for malicious tasks, while still allowing for benign fine-tuning?"
+                            ]
+                        },
+                        "4.4.3": {
+                            "Detection and Authorisation of Dual-Use Capability at Inference Time": [
+                                "How can the request of dual-use system capabilities be reliably detected?",
+                                "How could authorisation of user identity be used as a gate for dual-use model capabilities?"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "5": {
+            "Operationalisation": {
+                "5.1": {
+                    "Operationalising AI": {
+                        "5.1.1": {
+                            "Translation of Governance Goals into Policies and Requirements": [
+                                "What system properties (if any) are the most reliable indicators of risk, and thus candidates for serving as regulatory targets?",
+                                "How can AI safety, reliability, and other technical requirements be standardised given an insufficient explanatory understanding of model behaviour?"
+                            ]
+                        },
+                        "5.1.2": {
+                            "Deployment Corrections": [
+                                "What are general intervention and correction options if flaws with a model are identified post deployment?"
+                            ]
+                        }
+                    }
+                }
+            }
+        },
+        "6": {
+            "Ecosystem Monitoring": {
+                "6.1": {
+                    "Monitoring the Ecosystem": {
+                        "6.1.1": {
+                            "Clarification of Associated Risks": [
+                                "What risks, whether from intended or unintended harm, are associated with different (types of) systems?",
+                                "How do potential risks differ across domains?"
+                            ]
+                        },
+                        "6.1.2": {
+                            "Prediction of Future Developments and Impacts": [
+                                "How can trends and/or properties observed in current systems be extrapolated to make predictions about future systems?",
+                                "How could developments in AI-specific hardware impact the governability of compute?"
+                            ]
+                        },
+                        "6.1.3": {
+                            "Assessment of Environmental Impacts": [
+                                "What information about systems is needed to accurately assess the environmental impact of its development and deployment?",
+                                "Given the required information, how can the environmental impact of an AI system be accurately assessed?"
+                            ]
+                        },
+                        "6.1.4": {
+                            "Supply Chain Mapping": [
+                                "What technical methods can be implemented to create an auditable log of all actors and their contributions throughout the AI development process, from data collection to model deployment?"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
