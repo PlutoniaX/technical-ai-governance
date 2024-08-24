@@ -1,5 +1,5 @@
 import TAIGExplorerClient from '@/components/TAIGExplorerClient';
-import taigData from '@/TAIG.json';
+import taigData from '@/taig.json';
 
 export default function TAIGExplorerPage() {
   return (
