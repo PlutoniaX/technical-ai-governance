@@ -1,12 +1,15 @@
-import Link from 'next/link'
+import TAIGExplorerClient from '@/components/TAIGExplorerClient';
+import taigData from '@/taig.json';
 
 export default function Home() {
   return (
-    <main className="container mx-auto p-4">
-      <h1 className="text-4xl font-bold mb-8">Welcome to the Technical AI Governance Explorer</h1>
-      <Link href="/taig-explorer" className="text-xl text-blue-600 hover:text-blue-800">
-        Explore TAIG Research Problems
-      </Link>
-    </main>
-  )
+    <div className="min-h-screen bg-gray-900 text-white">
+      <div className="container mx-auto p-4 md:p-8">
+        <h1 className="text-3xl md:text-4xl font-bold mb-4 md:mb-8 text-center text-blue-400">Technical AI Governance Research Explorer</h1>
+        <div className="bg-gray-800 shadow-lg rounded-lg p-4 md:p-6">
+          <TAIGExplorerClient initialData={taigData.sections} />
+        </div>
+      </div>
+    </div>
+  );
 }
