@@ -125,8 +125,8 @@ const TAIGExplorer: React.FC<TAIGExplorerProps> = ({ data }) => {
                 <h2 className="text-xl font-bold mb-2">
                   {depth === 0 ? "Domains" :
                    depth === 1 ? "Subdomains" :
-                   depth === 2 ? "Research Topics" :
-                   "Research Questions"}
+                   depth === 2 ? "Topics" :
+                   "Questions"}
                 </h2>
                 {renderContent(columnData, depth)}
               </div>
